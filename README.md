@@ -1,4 +1,4 @@
-# vue-cli-plugin-apollo
+# vue-cli-apollo-graphql-ws
 
 [![npm](https://img.shields.io/npm/v/vue-cli-plugin-apollo.svg) ![npm](https://img.shields.io/npm/dm/vue-cli-plugin-apollo.svg)](https://www.npmjs.com/package/vue-cli-plugin-apollo)
 [![vue-cli3](https://img.shields.io/badge/vue--cli-3.x-brightgreen.svg)](https://github.com/vuejs/vue-cli)
@@ -6,7 +6,7 @@
 
 **:rocket: Start building a Vue app with Apollo and GraphQL in 2 minutes!**
 
-This is a vue-cli 3.x plugin to add Apollo and GraphQL in your Vue project.
+This is a vue-cli 3.x plugin to add Apollo and GraphQL in your Vue project using the `graphql-ws` protocol.
 
 <p>
   <a href="https://github.com/sponsors/Akryum/" target="_blank">

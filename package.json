@@ -1,7 +1,7 @@
 {
-  "name": "vue-cli-plugin-apollo",
-  "version": "0.22.2",
-  "description": "vue-cli 3 plugin to add Apollo and GraphQL",
+  "name": "vue-cli-apollo-graphql-ws",
+  "version": "0.1.0",
+  "description": "vue-cli 3 plugin to add Apollo and GraphQL with graphql-ws support.",
   "main": "index.js",
   "types": "./types.d.ts",
   "scripts": {
@@ -17,21 +17,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akryum/vue-cli-plugin-apollo.git"
+    "url": "git+https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws"
   },
   "keywords": [
     "vue",
     "vue-cli",
     "apollo",
-    "graphql"
+    "graphql",
+    "graphql-ws",
+    "websockets"
   ],
   "author": "Guillaume Chau <guillaume.b.chau@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Akryum/vue-cli-plugin-apollo/issues"
+    "url": "https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws/issues"
   },
-  "homepage": "https://github.com/Akryum/vue-cli-plugin-apollo#readme",
+  "homepage": "https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws#readme",
   "dependencies": {
+    "@apollo/client": "^3.7.4",
     "apollo": "^2.28.2",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.10",
@@ -52,12 +55,12 @@
     "express": "^4.17.1",
     "fs-extra": "^9.0.1",
     "graphql": "^15.1.0",
+    "graphql-ws": "^5.14.0",
     "graphql-subscriptions": "^1.1.0",
     "graphql-tag": "^2.10.3",
     "graphql-tools": "^6.0.9",
     "node-fetch": "^2.6.0",
     "nodemon": "^2.0.4",
-    "subscriptions-transport-ws": "^0.9.16",
     "ts-node": "^8.10.2"
   },
   "devDependencies": {
