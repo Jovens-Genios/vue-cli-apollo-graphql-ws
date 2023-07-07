@@ -1,4 +1,4 @@
-# vue-cli-apollo-graphql-ws
+# @jovensgeniosengineering/vue-cli-plugin-apollo
 
 [![npm](https://img.shields.io/npm/v/vue-cli-plugin-apollo.svg) ![npm](https://img.shields.io/npm/dm/vue-cli-plugin-apollo.svg)](https://www.npmjs.com/package/vue-cli-plugin-apollo)
 [![vue-cli3](https://img.shields.io/badge/vue--cli-3.x-brightgreen.svg)](https://github.com/vuejs/vue-cli)

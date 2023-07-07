@@ -1,5 +1,5 @@
 {
-  "name": "vue-cli-apollo-graphql-ws",
+  "name": "@jovensgeniosengineering/vue-cli-plugin-apollo",
   "version": "0.1.0",
   "description": "vue-cli 3 plugin to add Apollo and GraphQL with graphql-ws support.",
   "main": "index.js",
@@ -17,7 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws"
+    "url": "git+https://github.com/Jovens-Genios/vue-cli-plugin-apollo"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "vue",
@@ -30,9 +33,9 @@
   "author": "Guillaume Chau <guillaume.b.chau@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws/issues"
+    "url": "https://github.com/Jovens-Genios/vue-cli-plugin-apollo/issues"
   },
-  "homepage": "https://github.com/Jovens-Genios/vue-cli-apollo-graphql-ws#readme",
+  "homepage": "https://github.com/Jovens-Genios/vue-cli-plugin-apollo#readme",
   "dependencies": {
     "@apollo/client": "^3.7.4",
     "apollo": "^2.28.2",
