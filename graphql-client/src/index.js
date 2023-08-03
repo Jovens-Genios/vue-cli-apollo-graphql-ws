@@ -125,13 +125,32 @@ export function createApolloClient ({
       const wsLink = new GraphQLWsLink(
         createClient({
           url: wsEndpoint,
-          shouldRetry: true,
+          shouldRetry: () => true,
+          retryAttempts: 100,
+          retryWait: async (retries) => {
+            // start with 1 second delay
+            const baseDelay = 1000;
+
+            // max 3 seconds of jitter
+            const maxJitter = 3000;
+
+            // exponential backoff with jitter
+            return new Promise((resolve) =>
+              setTimeout(
+                resolve,
+                baseDelay * Math.pow(2, retries) +
+                  Math.floor(Math.random() * maxJitter)
+              )
+            );
+          },
           connectionParams: () => {
-            const Authorization = getAuth(tokenName)
-            return Authorization ? { Authorization, headers: { Authorization } } : {}
+            const Authorization = getAuth(tokenName);
+            return Authorization
+              ? { Authorization, headers: { Authorization } }
+              : {};
           },
         })
-      )
+      );
 
       if (disableHttp) {
         link = link ? link.concat(wsLink) : wsLink
